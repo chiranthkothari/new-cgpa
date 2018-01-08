@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cgpa</title>
+</head>
+<body>
+	<input type="text" name="1st" id="one">
+	<input type="text" name="2nd" id="two">
+	<input type="text" name="3rd" id="three">
+	<input type="text" name="4th" id="four">
+	<input type="text" name="5th" id="five">
+	<input type="text" name="6th" id="six">
+	<input type="text" name="7th" id="seven">
+	<input type="submit" name="" value="calculate" onclick="calc()">
+
+
+	<script type="text/javascript">
+		function calc(){
+			first= Number(document.getElementById('one').value);
+			second= Number(document.getElementById('two').value);
+			third= Number(document.getElementById('three').value);
+			fourth= Number(document.getElementById('four').value);
+			fifth= Number(document.getElementById('five').value);
+			sixth= Number(document.getElementById('six').value);
+			seventh= Number(document.getElementById('seven').value);
+			res= (((first*25)+(second*25)+(third*27)+(fourth*27)+(fifth*26.5)+(sixth*26.5)+(seventh*22))/179).toFixed(2);
+			alert("Your cgpa is "+res);
+		}
+
+	</script>	
+</body>
+</html>
